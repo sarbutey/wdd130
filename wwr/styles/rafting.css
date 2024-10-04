@@ -1,0 +1,52 @@
+.hero{
+    position: relative; /* Establishes the positioning context */
+    width: 100%;       /* Adjust as needed */
+    height: auto;     /* Adjust as needed */
+}  
+
+.hero img{
+    float:right;
+    width:100%;
+    height:auto;
+    margin: 0 0 20px 20px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative; /* To position the h1 and article absolutely within it */
+    width: 100%; /* Adjust as necessary */
+    height: 100vh; /* Full height of the viewport */
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    color: white; /* Make sure it's readable */
+}
+
+.hero article {
+    position: absolute;
+    top: 100px; /* Adjust as needed to position below the heading */
+    left: 20px; /* Align with heading */
+    background-color: rgba(255, 255, 255, 0.8); /* White background with some transparency */
+    padding: 20px; /* Add some padding for readability */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    width: calc(100% - 40px); /* Full width minus padding */
+}
+
+article p {
+    margin: 0;
+}
+
+article img {
+    float: right; /* Floats the image to the right of the paragraph */
+    margin-left: 20px; /* Space between text and image */
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
