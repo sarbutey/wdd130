@@ -11,12 +11,113 @@
     margin: 0 0 20px 20px;
 }
 
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
-.container {
+.header {
+    display: grid;
+    grid-template-columns: 1fr auto; /* Logo on the left, nav on the right */
+    align-items: center; /* Vertically center items */
+    padding: 1rem; /* Add some padding */
+    background-color: #f8f9fa; /* Light background color */
+    border-bottom: 1px solid #ddd; /* Optional: add a border at the bottom */
+}
+
+.logo {
+    font-size: 1.5rem; /* Adjust logo size */
+    font-weight: bold; /* Make logo text bold */
+}
+
+.nav {
+    display: flex; /* Use flexbox for the nav links */
+    gap: 1rem; /* Add spacing between links */
+}
+
+.nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Link color */
+    padding: 0.5rem 1rem; /* Add padding for better clickability */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav a:hover {
+    background-color: #e2e6ea; /* Change background on hover */
+    border-radius: 4px; /* Optional: add rounded corners */
+}
+
+
+.history{
+    background-color: #e3f2fd;
+    padding:40px 20px;
+    text-align: center;
+}
+
+.history h2{
+    font-size:32;
+    margin-bottom: 20px;
+    color:#0077cc;  
+}
+
+.history-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, mimax(250, 1fr));
+    gap: 20px
+
+}
+
+.history-item{
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding:20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.adventure{
+    padding:40px 20px; 
+    text-align: center;
+    background-color: lightblue;
+}
+
+.adventure h2{
+    font-size: 32px;
+    margin-bottom:20px;
+    color:#0077cc;
+}
+
+.adventure-grid{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+figure{
+    flex:1;
+    min-width:200px;
+    margin: 0;
+    border-radius: 8px;
+    overflow:hidden;
+    box-shadow: 0, 2px, 5px rgb(0, 0,0, 0.1);
+    background-color: #ffffff;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display:block;
+}
+
+figcaption{
+    padding:10px;
+    font-size:16px;
+    color:#3333
+}
+
+
+article{
     position: relative; /* To position the h1 and article absolutely within it */
     width: 100%; /* Adjust as necessary */
     height: 100vh; /* Full height of the viewport */
@@ -49,4 +150,28 @@ article img {
     margin-left: 20px; /* Space between text and image */
     max-width: 100%; /* Responsive image */
     height: auto; /* Maintain aspect ratio */
+}
+
+.footer {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Space between content and social links */
+    align-items: center; /* Center items vertically */
+    padding: 1rem; /* Add some padding */
+    background-color: #f8f9fa; /* Optional: set a background color */
+    border-top: 1px solid #ddd; /* Optional: add a border at the top */
+}
+
+.social-links {
+    display: flex; /* Enable Flexbox for social links */
+    gap: 1rem; /* Add space between icons */
+}
+
+.social-links a img {
+    width: 32px; /* Set a consistent size for icons */
+    height: 32px; /* Maintain aspect ratio */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.social-links a:hover img {
+    transform: scale(1.1); /* Slightly enlarge on hover */
 }
