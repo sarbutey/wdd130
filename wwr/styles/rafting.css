@@ -78,6 +78,7 @@ input[type="text"],
 .logo {
     font-size: 1.5rem; /* Adjust logo size */
     font-weight: bold; /* Make logo text bold */
+    font-style: italic;
 }
 
 .nav {
